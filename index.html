@@ -1,0 +1,244 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Clarence — Personal Website</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary">
+      <div class="sidebar__brand">
+        <a href="#home" class="sidebar__logo">Clarence</a>
+        <button class="sidebar__toggle" id="sidebar-toggle" aria-label="Toggle navigation">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+      </div>
+
+      <nav class="sidebar__nav" id="nav-menu" aria-label="Main navigation">
+        <ul class="sidebar__list">
+          <li><a href="#home" class="sidebar__link active-link"><i class="bx bx-home"></i><span>Home</span></a></li>
+          <li><a href="#about" class="sidebar__link"><i class="bx bx-user"></i><span>About</span></a></li>
+          <li><a href="#skills" class="sidebar__link"><i class="bx bx-code-alt"></i><span>Skills</span></a></li>
+          <li><a href="#projects" class="sidebar__link"><i class="bx bx-briefcase"></i><span>Projects</span></a></li>
+          <li><a href="#contact" class="sidebar__link"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__bottom">
+        <div class="sidebar__social" aria-hidden="false">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main" id="main">
+      <!-- HOME -->
+      <section class="home bd-grid" id="home" aria-label="Home">
+        <div class="home__data">
+          <h1 class="home__title">
+            <span class="line">Hi,</span>
+            <span class="line">I am <span class="home__title-color">Clarence</span></span>
+            <span class="line">Web Developer</span>
+          </h1>
+        </div>
+
+        <div class="home__img" aria-hidden="false">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Profile blob"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <defs>
+              <linearGradient id="bgGrad" x1="0" x2="1">
+                <stop offset="0%" stop-color="#2b2f4a" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#151827" stop-opacity="0.9" />
+              </linearGradient>
+              <mask id="mask0" maskUnits="userSpaceOnUse">
+                <path
+                  d="M9.19 145.96C34.03 76.58 114.87 54.73 184.11 29.48C245.80 6.99 311.86 -14.95 370.73 14.14C431.21 44.03 467.95 107.51 477.19 174.31C485.90 237.23 454.93 294.38 416.51 344.95C373.74 401.25 326.07 462.80 255.44 466.19C179.42 469.84 111.55 422.14 65.16 361.81C17.48 299.81 -17.16 219.58 9.19 145.96Z"
+                  fill="#fff"
+                />
+              </mask>
+            </defs>
+
+            <g mask="url(#mask0)">
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#bgGrad)" />
+              <image
+                class="home__blob-img"
+                href="images/cuenca_cc.png"
+                x="0" y="0"
+                width="479" height="467"
+                preserveAspectRatio="xMidYMid slice"
+                role="img"
+                aria-label="Clarence profile"
+              />
+              <rect x="0" y="0" width="100%" height="100%" fill="rgba(0,0,0,0.04)"/>
+            </g>
+          </svg>
+
+          <div class="home__social" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/clarence-c-a0b86331a/" target="_blank" rel="noopener" class="home__social-icon" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://facebook.com/clarence.cuenca18" target="_blank" rel="noopener" class="home__social-icon" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="home__social-icon" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section" id="about" aria-label="About">
+        <h2 class="section-title">About</h2>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="images/CUENCA.jpg" alt="Clarence portrait" />
+          </div>
+
+          <div>
+            <p class="about__text">
+              Hi! I'm Clarence A. Cuenca, 23 years old, a front-end developer passionate about crafting user-friendly and visually engaging web experiences. I translate ideas into interactive realities using HTML, CSS and JavaScript.
+            </p>
+            <p>
+              I hold a degree of Bachelor of Science in Information Technology from Caraga State University.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills section" aria-label="Skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__container bd-grid">
+          <div class="skills-list">
+            <img src="images/html,css,js.jpg" alt="HTML CSS JavaScript" class="skills-image" />
+            <h3 class="skills-title">HTML · CSS · JavaScript</h3>
+          </div>
+
+          <div class="skills-list">
+            <img src="images/webdev.jpg" alt="Web development" class="skills-image" />
+            <h3 class="skills-title">Web Development</h3>
+          </div>
+
+          <div class="skills-list">
+            <img src="images/problemsolving.png" alt="Problem solving" class="skills-image" />
+            <h3 class="skills-title">Problem Solving</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="projects section" aria-label="Projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-section">
+          <div class="project-card">
+            <h3>FurFinds System</h3>
+            <img src="images/furfinds.png" alt="FurFinds System" />
+            <p>A user-friendly platform to help find lost pets quickly by engaging the local community.</p>
+            <a href="#" class="button">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Cars Shop</h3>
+            <img src="images/carshop.png" alt="Cars Shop" />
+            <p>Gearhead Paradise — a site showcasing services and products for car enthusiasts.</p>
+            <a href="#" class="button">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact section" aria-label="Contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-cards">
+          <div class="contact-card email">
+            <a href="mailto:clarencecuenca0950@gmail.com" aria-label="Email Clarence">
+              <img src="images/gmail.png" alt="Gmail" />
+            </a>
+            <div class="contact-info"><h3>Gmail</h3></div>
+          </div>
+
+          <div class="contact-card facebook">
+            <a href="https://facebook.com/clarence.cuenca18" target="_blank" rel="noopener" aria-label="Facebook">
+              <img src="images/facebook.png" alt="Facebook" />
+            </a>
+            <div class="contact-info"><h3>Facebook</h3></div>
+          </div>
+
+          <div class="contact-card phone">
+            <a href="tel:+639918816751" aria-label="Call Clarence">
+              <img src="images/phone.png" alt="Phone" />
+            </a>
+            <div class="contact-info"><h3>Phone</h3></div>
+          </div>
+
+          <div class="contact-card linkedin">
+            <a href="https://www.linkedin.com/in/clarence-c-a0b86331a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <img src="images/linkedin.png" alt="LinkedIn" />
+            </a>
+            <div class="contact-info"><h3>LinkedIn</h3></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+      <div class="site-footer__inner">
+        <small>© 2025 Clarence A. Cuenca</small>
+      </div>
+    </footer>
+
+    <script>
+      // Sidebar toggle + behavior
+      const sidebar = document.getElementById('sidebar');
+      const toggle = document.getElementById('sidebar-toggle');
+      const links = document.querySelectorAll('.sidebar__link');
+
+      toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+        // rotate chevron for visual feedback
+        toggle.querySelector('i').classList.toggle('bx-chevron-right');
+      });
+
+      // Smooth scroll and collapse on mobile
+      links.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (window.innerWidth < 900) sidebar.classList.add('collapsed');
+        });
+      });
+
+      // Active link on scroll
+      const sections = [...document.querySelectorAll('main section[id]')];
+      function onScroll() {
+        const scrollY = window.pageYOffset;
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.offsetHeight;
+          const id = section.getAttribute('id');
+          const link = document.querySelector('.sidebar__link[href="#' + id + '"]');
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            link && link.classList.add('active-link');
+          } else {
+            link && link.classList.remove('active-link');
+          }
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // initial state for small screens
+      if (window.innerWidth < 900) sidebar.classList.add('collapsed');
+    </script>
+  </body>
+</html>
